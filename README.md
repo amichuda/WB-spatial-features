@@ -23,7 +23,8 @@ This project requires multiple Conda environments due to conflicting dependency 
 
 2.  **Spfeas Environment (`spfeas`)**:
     Used for spatial feature extraction (requires Python 3.6 and GDAL 2).
-    *Warning: This environment relies on legacy packages unavailable for macOS ARM64 (M1/M2/M3). It may only work on Intel-based Linux/macOS systems.*
+    *Warning: This environment relies on legacy packages unavailable for macOS ARM64 (M1/M2/M3). It may only work on Intel-based Linux/macOS systems - replciation of this environment has proven extremely challenging and typical methods of sharing the env like conda yml files do not reliably build. Please reach out to mmann1123@gwu.edu if you are looking to build or use spfeas*
+    
     ```bash
     # You can use the provided script
     chmod +x install_reqs.sh
@@ -32,7 +33,7 @@ This project requires multiple Conda environments due to conflicting dependency 
     # Or manually utilizing spfeas_env.yml if preferred, but install_reqs.sh is recommended for specific pip packages.
     ```
 
-3.  **Geowombat / Xr_fresh Environment (`geowombat`)**:
+4.  **Geowombat / Xr_fresh Environment (`geowombat`)**:
     Used for image processing and time series features.
     ```bash
     # Create the environment using the provided yaml
