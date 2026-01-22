@@ -1,0 +1,16 @@
+name: geowombat
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - geowombat
+  - gdal
+  - pandas
+  - xarray
+  - dask
+  - scikit-learn
+  - geopandas
+  - pip
+  - pip:
+    - git+https://github.com/mmann1123/xr_fresh.git
+    - pendulum
